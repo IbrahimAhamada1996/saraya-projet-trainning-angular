@@ -1,0 +1,61 @@
+<app-header></app-header>
+<div style="  margin-bottom: 80px;">
+
+  <h1>Quater Details</h1>
+  <p class="">Quater Details available of :
+    <span class="badge bg-success m-1" *ngFor="let investor of investorsQuater">{{investor.quater}}{{investor.year}}</span>
+  </p>
+  <form (ngSubmit)="search(form)" #form="ngForm">
+    <div class="row">
+      <div class="col-3">
+
+        <input type="text" class="form-control" placeholder="quater" name="searchQuarter"
+         [(ngModel)]="searchQuarter" >
+      </div>
+      <div class="col-3">
+
+        <input type="text" class="form-control" placeholder="Financier year " name="searchYaer"
+       [(ngModel)]="searchYaer" >
+      </div>
+      <div class="col-3">
+
+        <button type="submit" class="btn btn-primary" >Get Details</button>
+      </div>
+    </div>
+  </form>
+
+
+<div class="container mt-3">
+  <table class="table table-striped" >
+    <thead>
+      <tr>
+        <th>Quater</th>
+        <th>Sales</th>
+        <th>Other income</th>
+        <th>Gross profit</th>
+        <th>Depreciation</th>
+        <th>Interest</th>
+        <th>Tax</th>
+        <th>Net profit</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="isPresent">
+      <tr  *ngFor="let investor of investors; let i=index">
+        <td>{{investor.quater}}{{investor.year}}</td>
+        <td>{{investor.sale}}</td>
+        <td>{{investor.otherIncome}}</td>
+        <td>{{investor.grossProfit}}</td>
+        <td>{{investor.depreciation}}</td>
+        <td>{{investor.interest}}</td>
+        <td>{{investor.tax}}</td>
+        <td>{{investor.netProfit}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <div *ngIf="investors.length==0" class="text-warning">
+      <h4>Not data</h4>
+  </div>
+</div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-header bg-info">Car list</div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let car of cars">
+        <table class="table table-info">
+          <tbody >
+            <tr><td rowspan="4"><img [src]="car.img" alt="" width="200px" srcset=""></tr>
+            <tr><td>name:</td><td>{{car.name}}</td></tr>
+            <tr><td>Marque:</td><td>{{car.marque}}</td></tr>
+            <tr><td>Prix:</td><td>{{car.prix}}</td></tr>
+          </tbody>
+        </table>
+
+      </li>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div style="margin-bottom: 80px;">
+
+  <div class="container">
+
+    <div class="row m-5">
+      <h2>Products</h2>
+      <div class="col-5">
+        <div class="form-control">
+          <input type="search" id="form1" class="form-control" name="searchTerm"
+           placeholder="Search for product name"
+           [(ngModel)]="searchTerm" (input)="search(searchTerm)" />
+        </div>
+      </div>
+      <!-- <div class="col-4">
+        <button type="button" class="btn btn-primary">
+          Search
+        </button>
+      </div> -->
+    </div>
+
+    <div class="row">
+      <div class="col-4 m-b-10"  *ngFor="let product of products ; index as i" >
+        <div class="card bg-info" style="max-width: 20rem; max-height:20rem; margin-bottom: 10px;" >
+          <img [src]=product.image class="card-img-top m-2 w-auto " alt="{{product.name}}"  style="max-width: 20rem; max-height:10rem; ">
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <ul>
+              <li><b>use:</b>{{product.use}}</li>
+            </ul>
+            <a [routerLink]="['/products', product.id]"
+            routerLinkActive="router-link-active" class="btn btn-primary">See Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<app-footer></app-footer>
+

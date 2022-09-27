@@ -1,0 +1,37 @@
+{
+  "users":[
+    {
+      "id":1,
+      "firstname":"ibrahim",
+      "lastname":"Ahamada",
+      "sex":"M"
+    },
+    {
+      "id":2, 
+      "firstname":"ibrahim",
+      "lastname":"Ahamada",
+      "sex":"M"
+    }
+    ,
+    {
+      "id":3,
+      "firstname":"ibrahim",
+      "lastname":"Ahamada",
+      "sex":"M"
+    }
+    ,
+    {
+      "id":4,
+      "firstname":"ibrahim",
+      "lastname":"Ahamada",
+      "sex":"M"
+    }
+    ,
+    {
+      "id":5,
+      "firstname":"ibrahim",
+      "lastname":"Ahamada",
+      "sex":"M"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header bg-info">Add Student </div>
+  <div class="body">
+    <form #f="ngForm"  (ngSubmit)="onSubmit(f)">
+      <label for="firtname" class="form-label" >Firstname</label>
+      <input type="text" name="firstname" id="firstname" class="form-control" ngModel>
+      <label for="lastname" class="form-label">Lastname</label>
+      <input type="text" name="lastname" id="lastname" class="form-control" ngModel>
+      <label for="age" class="form-label">Age</label>
+      <input type="text" name="age" id="age" class="form-control" ngModel>
+      <label for="photo" class="form-label">photo</label>
+      <input type="file" name="photo" id="photo" class="form-control" ngModel>
+      <button type="submit" class="btn btn-outline-primary">Add</button>
+      <button type="reset" class="btn btn-outline-danger">reset</button>
+      {{f.value | json}}
+    </form>
+  </div>
+</div>

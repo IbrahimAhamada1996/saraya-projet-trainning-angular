@@ -1,0 +1,25 @@
+
+<div class="container">
+  <div class="row">
+
+
+
+  <div class="col-1">
+       <!-- Links -->
+     <nav class="navbar  bg-light text-white">
+       <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link"  [routerLink]="['/add']" >Create Car</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/list']"  >Car list</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+    <div class="col-11"> <router-outlet></router-outlet> </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,98 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Tormove",
+      "use": "pain relief",
+      "saltComposition":"Light blue: Indicates a neutral informative change or action ",
+      "about":"Light blue: Indicates a neutral informative change or action",
+      "sideEffects":"Light blue: Indicates a neutral informative change or action",
+      "image": "assets/img/medicament1.jfif"
+    },
+    {
+      "id": 2,
+      "name": "Ampicilline",
+      "use": "Unasym",
+      "saltComposition":"Light blue: Indicates a neutral informative change or action ",
+      "about":"Light blue: Indicates a neutral informative change or action",
+      "sideEffects":"Light blue: Indicates a neutral informative change or action",
+      "image": "assets/img/medicament2.jfif"
+    },
+    {
+      "id": 3,
+      "name": "Chlorpromazine",
+      "use": "commercial aux Etats-unis",
+      "saltComposition":"Light blue: Indicates a neutral informative change or action ",
+      "about":"Light blue: Indicates a neutral informative change or action",
+      "sideEffects":"Light blue: Indicates a neutral informative change or action",
+      "image": "assets/img/medicament2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Vitale",
+      "use": "commercial aux Etats-unis",
+      "saltComposition":"Light blue: Indicates a neutral informative change or action ",
+      "about":"Light blue: Indicates a neutral informative change or action",
+      "sideEffects":"Light blue: Indicates a neutral informative change or action",
+      "image": "assets/img/medicament3.jfif"
+    }
+  ],
+  "investors": [
+    {
+      "id":1,
+      "quater":"Q2",
+      "year":2018,
+      "otherIncome":1233,
+      "grossProfit":20365,
+      "depreciation":56202,
+      "interest":50236,
+      "tax":875602,
+      "netProfit":20000
+    },
+    {
+      "id":2,
+      "quater":"Q3",
+      "year":2019,
+      "otherIncome":1233,
+      "grossProfit":20365,
+      "depreciation":56202,
+      "interest":50236,
+      "tax":875602,
+      "netProfit":20000
+    },
+    {
+      "id":3,
+      "quater":"Q2",
+      "year":2020,
+      "otherIncome":1233,
+      "grossProfit":20365,
+      "depreciation":56202,
+      "interest":50236,
+      "tax":875602,
+      "netProfit":20000
+    },
+    {
+      "id":4,
+      "quater":"Q1",
+      "year":2021,
+      "otherIncome":1233,
+      "grossProfit":20365,
+      "depreciation":56202,
+      "interest":50236,
+      "tax":875602,
+      "netProfit":20000
+    },
+    {
+      "id":5,
+      "quater":"Q3",
+      "year":2022,
+      "otherIncome":1233,
+      "grossProfit":20365,
+      "depreciation":56202,
+      "interest":50236,
+      "tax":875602,
+      "netProfit":20000
+    }
+  ]
+
+}

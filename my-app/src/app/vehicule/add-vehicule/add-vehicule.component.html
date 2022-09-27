@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-header bg-info">Add Car </div>
+  <div class="body">
+    <form #f="ngForm"  (ngSubmit)="onSubmit(f)">
+      <label for="name" class="form-label" >name</label>
+      <input type="text" name="name" id="name" class="form-control" ngModel>
+      <label for="marque" class="form-label">marque</label>
+      <input type="text" name="marque" id="marque" class="form-control" ngModel>
+      <label for="prix" class="form-label">Prix</label>
+      <input type="text" name="prix" id="prix" class="form-control" ngModel>
+      <label for="photo" class="form-label">photo</label>
+      <input type="file" name="photo" id="photo" class="form-control" ngModel>
+      <button type="submit" class="btn btn-outline-primary">Add</button>
+      <button type="reset" class="btn btn-outline-danger">reset</button>
+      {{f.value | json}}
+    </form>
+  </div>
+</div>
+
